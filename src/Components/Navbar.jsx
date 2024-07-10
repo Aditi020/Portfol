@@ -28,3 +28,8 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+// Navbar has following issues
+// the position of navbar is incorrect.
+// Also navlinks are yet to add
