@@ -27,7 +27,7 @@ function About() {
     ];
 
     const Testimonial = ({ name, avatar, text }) => (
-        <li className="testimonials-item">
+        <li className="testimonials-item" style={{ listStyle: 'none' }}>
             <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
                     <img src={avatar} alt={name} width="60" data-testimonials-avatar />
