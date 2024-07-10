@@ -1,12 +1,14 @@
 import './App.css'
 import Sidebar from './Components/Sidebar'
+import About from './Components/About'
 
 function App() {
   
 
   return (
     <>
-      <Sidebar/>
+      {/* < Sidebar/> */}
+      <About/>
     </>
   )
 }

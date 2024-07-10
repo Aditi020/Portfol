@@ -178,6 +178,11 @@ article {
     width: 120px;
 }
 
+/* .info-content {
+    display: flex;
+    flex-direction: column;
+} */
+
 .info-content .name {
     color: var(--white-2);
     font-size: var(--fs-3);
@@ -465,6 +470,7 @@ article {
         position: sticky;
         top: 10px;
         max-height: max-content;
+        max-width: max-content;
         margin-bottom: 30;
         padding: 60px;
         z-index: 1;
@@ -473,5 +479,20 @@ article {
         /* Make the sidebar a flex container with column layout */
 
 
+    }
+}
+
+@media (max-width: 1250px) {
+    .avatar-box{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .avatar-details {
+        text-align: right;
+    }
+
+    .info-content .name {
+        margin-bottom: 0; /* Change the margin-bottom as needed */
     }
 }

@@ -8,6 +8,9 @@ body {
   background: var(--smoky-black);
 }
 
+
+
+
 :root {
 
   /**
@@ -130,7 +133,6 @@ main {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
 }
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
