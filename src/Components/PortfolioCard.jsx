@@ -1,11 +1,11 @@
 import React from "react";
 import { IoEyeOutline } from "react-icons/io5";
-import "../Style/Portfolio.css";
+// import "../Style/Portfolio.css";
 
-function PortfolioCard({ title, category, imgSrc }) {
+function PortfolioCard({ title, category, imgSrc, link }) {
     return (
         <li className="project-item">
-            <a href="#">
+            <a href={link} target="_blank" rel="noopener noreferrer">
                 <figure className="project-img">
                     <div className="project-item-icon-box">
                         <IoEyeOutline />

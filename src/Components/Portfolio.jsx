@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "../Style/Portfolio.css";
+// import "../Style/Portfolio.css";
 import PortfolioProjects from "./PortfolioProjects";
 import PortfolioCard from "./PortfolioCard";
 import { IoChevronDownOutline } from "react-icons/io5";
 
 // Component to render the category filters
-//  The FilterList component renders a list of categories with corresponding buttons for filtering projects based on category. 
+// The FilterList component renders a list of categories with corresponding buttons for filtering projects based on category.
 function FilterList({ categories, selectedCategory, onSelectCategory }) {
     return (
         <ul className="filter-list">
@@ -24,7 +24,7 @@ function FilterList({ categories, selectedCategory, onSelectCategory }) {
 }
 
 // Component to render the dropdown for category selection
-//  The FilterSelectBox component displays a dropdown interface for selecting categories. 
+// The FilterSelectBox component displays a dropdown interface for selecting categories.
 function FilterSelectBox({ categories, onSelectCategory }) {
     return (
         <div className="filter-select-box">
@@ -84,6 +84,7 @@ function Portfolio() {
                             title={project.title}
                             category={project.category}
                             imgSrc={project.imgSrc}
+                            link={project.link}
                         />
                     ))}
                 </ul>
