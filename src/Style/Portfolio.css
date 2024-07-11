@@ -1,0 +1,105 @@
+.portfolio {
+    padding: 20px;
+}
+
+.article-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.filter-list,
+.select-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.filter-item,
+.select-item {
+    margin-right: 10px;
+}
+
+.filter-item button,
+.select-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.filter-item button.active,
+.select-item button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.filter-select-box {
+    position: relative;
+    margin-top: 20px;
+}
+
+.filter-select {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-value {
+    margin-right: 10px;
+}
+
+.select-icon {
+    font-size: 1.2em;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.project-item {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-item-icon-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.project-title {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.project-category {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 10px 10px;
+}

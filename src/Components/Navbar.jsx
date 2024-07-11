@@ -32,4 +32,4 @@ export default Navbar;
 
 // Navbar has following issues
 // the position of navbar is incorrect.
-// Also navlinks are yet to add
+// Also navlinks or routes are yet to add 
