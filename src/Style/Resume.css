@@ -119,6 +119,7 @@
     border-radius: inherit;
 }
 
+
 /**
  * responsive larger than 580px screen
  */
@@ -145,38 +146,28 @@
 
     }
 
-
-
     /**
-   * #REUSED STYLE
-   */
-
-
-  /**
    * #RESUME
    */
 
-  .timeline-list {
-      margin-left: 65px;
-  }
+    .timeline-list {
+        margin-left: 65px;
+    }
 
-  .timeline-item:not(:last-child)::before {
-      left: -40px;
-  }
+    .timeline-item:not(:last-child)::before {
+        left: -40px;
+    }
 
-  .timeline-item::after {
-      height: 8px;
-      width: 8px;
-      left: -43px;
-  }
+    .timeline-item::after {
+        height: 8px;
+        width: 8px;
+        left: -43px;
+    }
 
-  .skills-item:not(:last-child) {
-      margin-bottom: 25px;
-  }
-  }
-
-
-
+    .skills-item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
 
 /**
  * responsive larger than 1250px screen
@@ -213,18 +204,12 @@
     }
 
 
-
     /**
-   * REUSED STYLE
-   */
+  	 * RESUME
+  	 */
 
+    .timeline-text {
+        max-width: 700px;
+    }
 
-  /**
-	 * RESUME
-	 */
-
-  .timeline-text {
-      max-width: 700px;
-  }
-
-  }
+}
