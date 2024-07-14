@@ -3,8 +3,8 @@ import './App.css'
 // import Navbar from './Components/Navbar'
 // import About from './Components/About'
 // import Resume from './Components/Resume'
-import Portfolio from './Components/Portfolio'
-
+// import Portfolio from './Components/Portfolio'
+import Blog from './Components/Blog'
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       {/* <Navbar/>  */}
       {/* <About/> */}
       {/* <Resume/>  */}
-      <Portfolio/>
+      {/* <Portfolio/> */}
+      <Blog/>
     </>
   )
 }
