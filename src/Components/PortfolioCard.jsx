@@ -18,5 +18,5 @@ function PortfolioCard({ title, category, imgSrc, link }) {
         </li>
     );
 }
-
+ 
 export default PortfolioCard;
