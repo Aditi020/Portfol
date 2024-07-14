@@ -122,8 +122,5 @@ export default Sidebar;
 
 
 // Problems left are 
-// 1st chevron icon
-// 2nd transition
-// 3rd name should come on right
-// 4th background: var(--eerie-black-2); border: 1px solid var(--orange-yellow-crayola);border-radius: 20px; 
-// these type of css is visible at screen <=580px and >=1250px even after usign dropdown menu but not when screen size is between 580px to 1250px.
+// 1st transition
+// 2nd console show errors
