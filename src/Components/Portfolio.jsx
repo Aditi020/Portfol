@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "../Style/Portfolio.css";
+import "../Style/Portfolio.css";
 import PortfolioProjects from "./PortfolioProjects";
 import PortfolioCard from "./PortfolioCard";
 import { IoChevronDownOutline } from "react-icons/io5";

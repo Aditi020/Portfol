@@ -1,6 +1,6 @@
 import React from "react";
 import { IoEyeOutline } from "react-icons/io5";
-// import "../Style/Portfolio.css";
+import "../Style/Portfolio.css";
 
 function PortfolioCard({ title, category, imgSrc, link }) {
     return (

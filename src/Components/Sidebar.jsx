@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import Myavatar from "../assets/avatar-1.png";
 import '../Style/Sidebar.css';
-import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline } from 'react-icons/io5';
-import ChevronIcon from '@ltht-react/chevron-icon';
+import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoChevronDown } from 'react-icons/io5';
+
 
 function SocialItem({ IconComponent }) {
     return (
@@ -12,7 +13,7 @@ function SocialItem({ IconComponent }) {
             </a>
         </li>
     );
-}
+};
 
 function ContactItem({ icon, title, value }) {
     let IconComponent;
@@ -44,7 +45,7 @@ function ContactItem({ icon, title, value }) {
             </div>
         </li>
     );
-}
+};
 
 function Sidebar() {
     const contacts = [
@@ -80,7 +81,7 @@ function Sidebar() {
     }, []);
 
     return (
-        <aside className={`sidebar ${isSmallScreen ? 'small-screen' : ''}`} data-sidebar>
+        <aside className={`sidebar ${isSmallScreen ? 'small-screen' : ''}`} >
             <div className="sidebar-info">
                 <figure className="avatar-box">
                     <img src={Myavatar} alt="Richard hanrick" width="80" />
@@ -90,12 +91,12 @@ function Sidebar() {
                     <p className="title">Web developer</p>
                 </div>
                 {isSmallScreen && (
-                    <div className="info_more-btn" onClick={handleDropdownClick}>
-                        {window.innerWidth <= 450 ? <ChevronIcon direction="down" /> : "Show Contacts"}
-                    </div>
+                    <button className="info_more-btn" onClick={handleDropdownClick}>
+                        <span>Show Contacts</span>
+                        <IoChevronDown />
+                    </button>
                 )}
-
-                </div>
+            </div>
 
             {(!isSmallScreen || showDropdown) && (
                 <div className="sidebar-info_more">
@@ -105,7 +106,8 @@ function Sidebar() {
                             <ContactItem key={title} icon={icon} title={title} value={value} />
                         ))}
                     </ul>
-                    <ul className="social-list">
+                    <div className="separator"></div>
+                    <ul className="social-list" style={{ listStyle: 'none' }}>
                         <SocialItem IconComponent={IoLogoFacebook} />
                         <SocialItem IconComponent={IoLogoTwitter} />
                         <SocialItem IconComponent={IoLogoInstagram} />

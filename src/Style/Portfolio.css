@@ -1,105 +1,143 @@
+/* Portfolio section */
 .portfolio {
+    max-width: 1200px;
+    /* Limit the maximum width of the portfolio section */
+    margin: 0 auto;
+    /* Center the portfolio section on the page */
     padding: 20px;
+    /* Add some padding around the portfolio section */
 }
 
-.article-title {
-    font-size: 2em;
+.filter-list {
     margin-bottom: 20px;
+    text-align: center;
+    /* Center align filter buttons */
 }
 
-.filter-list,
-.select-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.filter-item,
-.select-item {
+.filter-item {
+    display: inline;
+    /* Display filter items inline */
     margin-right: 10px;
+    /* Add some spacing between filter items */
 }
 
-.filter-item button,
-.select-item button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
+.filter-item:last-child {
+    margin-right: 0;
+    /* Remove margin from the last filter item */
 }
 
-.filter-item button.active,
-.select-item button:hover {
-    background-color: #4CAF50;
-    color: white;
+.filter-item button {
+    padding: 8px 14px;
+    /* Adjust button padding */
 }
 
 .filter-select-box {
     position: relative;
-    margin-top: 20px;
-}
-
-.filter-select {
-    background: none;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Center align the select box */
 }
 
 .select-value {
-    margin-right: 10px;
+    padding: 8px;
+    /* Adjust padding for the select value */
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .select-icon {
-    font-size: 1.2em;
+    display: inline-block;
+    /* Display select icon as inline-block */
+    margin-left: 5px;
+    /* Add some spacing between select value and icon */
+}
+
+.filter-select {
+    padding: 8px 14px;
+    /* Adjust padding for the select button */
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-list {
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Align the select list below the select box */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center the select list horizontally */
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.filter-select-box:hover .select-list {
+    display: block;
+    /* Show the select list on hover */
 }
 
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow project items to wrap to the next line */
+    gap: 20px;
+    justify-content: center;
+    /* Center the project items horizontally */
 }
 
 .project-item {
-    width: calc(33.333% - 20px);
-    margin: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    flex: 0 0 calc(33.3333% - 20px);
+    /* Set the width for project items */
+    max-width: calc(33.3333% - 20px);
+    /* Set the maximum width for project items */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
     border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s;
+    padding: 15px;
 }
 
-.project-item:hover {
-    transform: scale(1.05);
+.project-item a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-img {
     position: relative;
     overflow: hidden;
-}
-
-.project-item-icon-box {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 50%;
-    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .project-title {
-    font-size: 1.2em;
-    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .project-category {
-    font-size: 0.9em;
     color: #666;
-    margin: 0 10px 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-item {
+        flex: 1 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
 }
