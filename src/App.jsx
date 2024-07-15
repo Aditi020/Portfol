@@ -4,7 +4,8 @@ import './App.css'
 // import About from './Components/About'
 // import Resume from './Components/Resume'
 // import Portfolio from './Components/Portfolio'
-import Blog from './Components/Blog'
+// import Blog from './Components/Blog'
+import Contact from './Components/Contact'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <About/> */}
       {/* <Resume/>  */}
       {/* <Portfolio/> */}
-      <Blog/>
+      {/* <Blog/> */}
+      <Contact/>
     </>
   )
 }
