@@ -1,0 +1,85 @@
+/* Base layout for screen sizes above 1250px */
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 10%;
+    min-width: 150px;
+    /* Optional: prevent sidebar collapse */
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content .position{
+    position: fixed;
+        right: 7.2% !important;
+}
+
+.navbar {
+    position: sticky;
+    /* top: 0; */
+    /* z-index: 1000; */
+    top: 7.1% !important;
+
+}
+
+.page-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Responsive styles for screens between 580px and 1250px */
+@media (max-width: 1250px) and (min-width: 580px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        /* Sidebar takes full width at the top */
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        order: 2;
+        position: static;
+        /* Move navbar to the bottom */
+        margin-top: 20px;
+    }
+
+    .page-content {
+        flex-grow: 1;
+        margin-top: 20px;
+        /* Content will be below the sidebar */
+    }
+}
+
+/* Styles for small screens less than 580px */
+@media (max-width: 580px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        order: 2;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .page-content {
+        flex-grow: 1;
+        margin-top: 20px;
+    }
+}

@@ -81,6 +81,7 @@ function Sidebar() {
     }, []);
 
     return (
+        <sidebar className="sidebar-container" >
         <aside className={`sidebar ${isSmallScreen ? 'small-screen' : ''}`} >
             <div className="sidebar-info">
                 <figure className="avatar-box">
@@ -115,6 +116,7 @@ function Sidebar() {
                 </div>
             )}
         </aside>
+        </sidebar>
     );
 }
 

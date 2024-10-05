@@ -1,33 +1,36 @@
-import "../Style/Navbar.css";
 import React from 'react';
+import { Link } from 'react-router-dom';
+import "../Style/Navbar.css";
 
 function Navbar() {
     return (
-        <div className="main-content">
-            <nav className="navbar">
-                <ul className="navbar-list" style={{ listStyle: 'none' }}>
-                    <li className="navbar-item">
-                        <button className="navbar-link active" data-nav-link>About</button>
-                    </li>
-                    <li className="navbar-item">
-                        <button className="navbar-link" data-nav-link>Resume</button>
-                    </li>
-                    <li className="navbar-item">
-                        <button className="navbar-link" data-nav-link>Portfolio</button>
-                    </li>
-                    <li className="navbar-item">
-                        <button className="navbar-link" data-nav-link>Blog</button>
-                    </li>
-                    <li className="navbar-item">
-                        <button className="navbar-link" data-nav-link>Contact</button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav className="navbar">
+            <ul className="navbar-list" style={{ listStyle: 'none' }}>
+                <li className="navbar-item">
+                    <Link to="/Home" className="navbar-link active">Home</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/about" className="navbar-link">About</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/resume" className="navbar-link">Resume</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/portfolio" className="navbar-link">Portfolio</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/blog" className="navbar-link">Blog</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/contact" className="navbar-link">Contact</Link>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
 export default Navbar;
+
 
 
 // Navbar has following issues
