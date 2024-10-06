@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 .navbar {
-    /* position: absolute; */
+    position: absolute;
     /* bottom: 0; */
     /* top: 7.1% !important; */
     /* right: 7.2% !important; */
@@ -51,51 +51,4 @@
   #RESPONSIVE
 \*-----------------------------------*/
 
-@media (min-width: 580px) {
-    .navbar {
-        border-radius: 20px 20px 0 0;
-    }
-
-    .navbar-list {
-        gap: 20px;
-    }
-
-    .navbar-link {
-        --fs-8: 14px;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-link {
-        --fs-8: 15px;
-    }
-}
-
-@media (min-width: 1024px) {
-    :root {
-        --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
-        --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
-        --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-    }
-
-    .navbar {
-        position: absolute;
-        bottom: auto;
-        top: 0;
-        left: auto;
-        right: 0;
-        width: max-content;
-        border-radius: 0 20px;
-        padding: 0 20px;
-        box-shadow: none;
-    }
-
-    .navbar-list {
-        gap: 30px;
-        padding: 0 20px;
-    }
-
-    .navbar-link {
-        font-weight: var(--fw-500);
-    }
-}
+/* 

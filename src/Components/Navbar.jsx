@@ -5,7 +5,7 @@ import "../Style/Navbar.css";
 function Navbar() {
     return (
         <nav className="navbar">
-            <ul className="navbar-list" style={{ listStyle: 'none' }}>
+            <ul className="navbar-list" style={{ listStyle: 'none', position: "relative", top: "10px" }}>
                 <li className="navbar-item">
                     <Link to="/Home" className="navbar-link active">Home</Link>
                 </li>
