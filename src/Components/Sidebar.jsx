@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import Myavatar from "../assets/avatar-1.png";
+import Myavatar from "../assets/avatar1.png";
 import '../Style/Sidebar.css';
 import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoChevronDown } from 'react-icons/io5';
 
