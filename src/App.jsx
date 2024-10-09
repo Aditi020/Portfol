@@ -1,16 +1,11 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import Layout from './Layout';
+import React from 'react';
+import AppRoutes from './Route'; // Import your routes file
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        {/* You can add other routes here */}
-      </Routes>
-    </Router>
+    <div>
+      <AppRoutes /> {/* Render your routes */}
+    </div>
   );
 }
 

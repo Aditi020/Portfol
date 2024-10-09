@@ -6,8 +6,9 @@
     position: absolute;
     /* bottom: 0; */
     /* top: 7.1% !important; */
-    /* right: 7.2% !important; */
+    right: 7.2% !important;
     /* right: 0; */
+        border: 0.4px solid hsla(45, 54%, 58%, 0.774) !important;
     width: max-content;
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);

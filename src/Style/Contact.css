@@ -137,11 +137,15 @@ body {
 \*-----------------------------------*/
 
 .contact{
-    padding: 20px;
+    padding: 30px;
         background-color: #f8f8f8;
         border: 1px solid var(--jet);
+        border-color: 1px solid hsl(45, 100%, 72%) !important;
         border-radius: 20px;
-}
+        padding-left: 110px !important;
+        padding-right: 190px !important;
+        /* margin-right: -20px; */
+    }
 
 .article-title {
     position: relative;

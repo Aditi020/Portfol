@@ -1,16 +1,15 @@
 import React from 'react';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
-import About from './Components/About'; // Example page
 import './Layout.css';
 
-const Layout = () => {
+const Layout = ({ children }) => { // Accept children props
     return (
         <div className="layout">
             <Sidebar />
-            <div className="page-content">
-                <About className="Page"/> {/* Replace with Routes to dynamically render different pages */}
-                <Navbar className="navbar"/>
+            <div  className="page-content">
+                {children}{/* Render the children, which will be the routed components */}
+                <Navbar className="navbar" />
             </div>
         </div>
     );

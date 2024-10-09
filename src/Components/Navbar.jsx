@@ -7,9 +7,6 @@ function Navbar() {
         <nav className="navbar">
             <ul className="navbar-list" style={{ listStyle: 'none', position: "relative", top: "10px" }}>
                 <li className="navbar-item">
-                    <Link to="/Home" className="navbar-link active">Home</Link>
-                </li>
-                <li className="navbar-item">
                     <Link to="/about" className="navbar-link">About</Link>
                 </li>
                 <li className="navbar-item">

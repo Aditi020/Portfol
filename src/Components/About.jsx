@@ -74,7 +74,7 @@ function About() {
                     ))}
                 </ul>
             </section>
-            <section className="testimonials">
+            {/* <section className="testimonials">
                 <h3 className="h3 testimonials-title">Testimonials</h3>
                 <ul className="testimonials-list has-scrollbar">
                     {testimonialsData.map((testimonial, index) => (
@@ -93,8 +93,8 @@ function About() {
                         </div>
                         <button className="close-modal-button">Close</button>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div>*/}
         </article>
     );
 }
