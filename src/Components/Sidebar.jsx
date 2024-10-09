@@ -49,10 +49,10 @@ function ContactItem({ icon, title, value }) {
 
 function Sidebar() {
     const contacts = [
-        { icon: 'mail-outline', title: 'Email', value: 'richard@example.com' },
-        { icon: 'phone-portrait-outline', title: 'Phone', value: '+1 (213) 352-2795' },
-        { icon: 'calendar-outline', title: 'Birthday', value: 'June 23, 1982' },
-        { icon: 'location-outline', title: 'Location', value: 'Sacramento, California, USA' },
+        { icon: 'mail-outline', title: 'Email', value: 'AK24er@gmail.com' },
+        { icon: 'phone-portrait-outline', title: 'Phone', value: '+91 9910158592' },
+        { icon: 'calendar-outline', title: 'Birthday', value: 'Febr 24, 2002' },
+        { icon: 'location-outline', title: 'Location', value: 'Ghaziabad, Uttar Pradesh, India' },
     ];
 
     const [showDropdown, setShowDropdown] = useState(false);
@@ -88,8 +88,8 @@ function Sidebar() {
                     <img src={Myavatar} alt="Richard hanrick" width="80" />
                 </figure>
                 <div className="info-content">
-                    <h1 className="name" title="Richard hanrick">Richard hanrick</h1>
-                    <p className="title">Web developer</p>
+                    <h1 className="name" title="Richard hanrick">Aditi Kumar</h1>
+                    <p className="title">Full-Stack Developer</p>
                 </div>
                 {isSmallScreen && (
                     <button className="info_more-btn" onClick={handleDropdownClick}>
