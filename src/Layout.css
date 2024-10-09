@@ -1,11 +1,13 @@
 /* Base layout for screens larger than 1024px */
 .layout {
+    
     display: flex;
     /* padding: 0 20px; */
     /* Padding on both sides */
 }
 
 .sidebar {
+    margin-left: -20px !important;
     width: 10%;
     /* Sidebar width */
     min-width: 150px;

@@ -135,7 +135,7 @@ article {
     border: 1px solid var(--orange-yellow-crayola);
     border-radius: 20px;
     position: sticky;
-    top: 10px;
+    top: 2.6rem !important;
     max-height: max-content;
     margin-bottom: 30;
     padding: 60px;

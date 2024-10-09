@@ -15,7 +15,7 @@
     border-radius:  0 20px;
     box-shadow: var(--shadow-2);
     z-index: 5;
-    
+    padding-bottom: 1rem !important;
 } 
 
 .navbar-list {
