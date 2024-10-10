@@ -26,18 +26,26 @@ function FilterList({ categories, selectedCategory, onSelectCategory }) {
 // Component to render the dropdown for category selection
 // The FilterSelectBox component displays a dropdown interface for selecting categories.
 function FilterSelectBox({ categories, onSelectCategory }) {
+    const [isOpen, setIsOpen] = useState(false); // To track dropdown state
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <div className="filter-select-box">
-            <button className="filter-select">
+            <button className="filter-select" onClick={toggleDropdown}>
                 <div className="select-value">Select category</div>
                 <div className="select-icon">
                     <IoChevronDownOutline />
                 </div>
             </button>
-            <ul className="select-list">
+            <ul className={`select-list ${isOpen ? 'visible' : ''}`}>
                 {categories.map(category => (
                     <li className="select-item" key={category}>
-                        <button onClick={() => onSelectCategory(category)}>{category}</button>
+                        <button onClick={() => onSelectCategory(category)}>
+                            {category}
+                        </button>
                     </li>
                 ))}
             </ul>
@@ -74,6 +82,7 @@ function Portfolio() {
                 />
                 <FilterSelectBox
                     categories={categories}
+                    selectedCategory={selectedCategory}
                     onSelectCategory={handleCategorySelect}
                 />
                 {/* Render project cards */}

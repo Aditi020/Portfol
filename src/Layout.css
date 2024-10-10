@@ -31,7 +31,7 @@
 
 .page-content .Navbar {
     position: absolute;
-    right: 20px !important;
+    /* right: 20px !important; */
     /* top: 0; */
 }
 
@@ -80,9 +80,9 @@
 
 
     .navbar {
-        position: inherit;
+        position: fixed;
         /* Position from the top */
-        right: 45px !important;
+        /* right: 45px !important; */
         /* Position on the right */
         width: max-content;
         /* Maintain compact width */
@@ -105,7 +105,26 @@
         flex-grow: 1 !important;
         /* Space above content */
     }
+
 }
+
+@media (max-width: 1250px) and (min-width: 1164){
+.navbar {
+        position: relative;
+        /* Position from the top */
+        /* margin-right: -6% ; */
+        /* Position on the right */
+        width: max-content;
+
+    }
+
+.page-content .navbar {
+        /* margin-right: 1%; */
+        /* margin-right: -55px; */
+        position: absolute;
+    }
+}
+
 @media (max-width: 1024px) {
     .navbar {
         position: fixed;

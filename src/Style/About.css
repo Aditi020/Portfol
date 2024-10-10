@@ -10,11 +10,11 @@ article {
             /* border-radius: 20px; */
     border: 1px solid var(--jet);
     border-radius: 20px;
-    padding: 15px;
+    padding: 35px;
     box-shadow: var(--shadow-1);
     z-index: 1;
     padding-top: 70px !important;
-    padding-left: 70px !important;
+    /* padding-left: 70px !important; */
 }
 
 .separator {

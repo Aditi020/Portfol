@@ -34,7 +34,7 @@
 }
 
 .portfolio {
-    padding: 20px;
+    padding:40px;
     border: 1px solid var(--jet);
     border-radius: 20px;
     display: block;
@@ -158,22 +158,46 @@
     transform: translateY(-50%);
     color: #333;
 }
+/* Styling for the button and dropdown to match the button's dimensions and styling */
+.filter-select-box button,
+.select-list {
+   color: var(--orange-yellow-crayola);
+     /* background: var(--border-gradient-onyx); */
+    padding: 10px;
+    box-shadow: var(--shadow-2);
+    border: none;
+    border-radius: 5px;
+    transition: var(--transition-1);
+    width: 100%;
+    /* Make the dropdown as wide as the button */
+}
 
+/* Initially hide the dropdown */
 .select-list {
     list-style: none;
     padding: 0;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
+    margin-top: 10px;
+    /* Space between button and dropdown */
     border-radius: 5px;
-    width: 100%;
     text-align: center;
-    display: none;
+    max-height: 0;
+    /* Initially collapse the dropdown */
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    /* Smooth expand/collapse */
 }
 
-.select-list.active {
-    display: block;
+/* When dropdown is visible */
+.select-list.visible {
+    max-height:fit-content;
+    /* Adjust height to the number of items you expect */
+    padding: 10px 0;
+    /* Adds padding when visible */
+}
+
+/* Each dropdown item styling */
+.select-item {
+    padding: 0.5rem 1rem;
 }
 
 .select-item button {
@@ -182,8 +206,16 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    color: var(--orange-yellow-crayola);
 }
 
+/* Optional hover effect for the items */
+.select-item button:hover {
+    background-color: var(--border-gradient-onyx-hover);
+    /* Add hover background if needed */
+    color: white;
+    /* Change text color on hover */
+}
 /* Project list styles */
 .project-list {
     list-style: none;
@@ -192,6 +224,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 1;
+    margin-left: 45px;
 }
 
 .project-item {
@@ -264,6 +297,7 @@
     font-size: var(--fs-4);
     font-weight: var(--fw-600);
     line-height: 1.3;
+    margin-left: 25%;
     /* text-decoration: none !important; */
 
 }
@@ -272,6 +306,7 @@
     color: var(--light-gray-70);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
+    margin-left: 22%;
     /* text-decoration: none !important; */
 }
 
@@ -302,8 +337,13 @@
     .filter-select {
         /* width: 100%; */
         /* margin-bottom: -80px; */
-        padding: 10px 100px;
+        padding: 5px 100px;
         /* margin-top: -80px; */
+        color: var(--orange-yellow-crayola);
+            background: var(--border-gradient-onyx);
+            /* padding: 10px; */
+            box-shadow: var(--shadow-2);
+            transition: var(--transition-1);
     }
 
     .filter-item {

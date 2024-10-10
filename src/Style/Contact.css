@@ -1,4 +1,3 @@
-
 :root {
 
     /**
@@ -136,21 +135,20 @@ body {
   #CONTACT
 \*-----------------------------------*/
 
-.contact{
-    padding: 30px;
-        background-color: #f8f8f8;
-        border: 1px solid var(--jet);
-        border-color: 1px solid hsl(45, 100%, 72%) !important;
-        border-radius: 20px;
-        padding-left: 110px !important;
-        padding-right: 190px !important;
-        /* margin-right: -20px; */
-    }
+.contact {
+    padding: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid var(--jet);
+    border-color: 1px solid hsl(45, 100%, 72%) !important;
+    border-radius: 20px;
+
+    
+}
 
 .article-title {
     position: relative;
     padding-bottom: 7px;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .article-title::after {
@@ -189,11 +187,12 @@ body {
 .mapbox {
     position: relative;
     height: 250px;
-    width: 100%;
+    max-width: 120%;
     border-radius: 16px;
     margin-bottom: 30px;
     border: 1px solid var(--jet);
     overflow: hidden;
+    /* margin-left: -20px; */
 }
 
 .mapbox figure {
@@ -336,36 +335,37 @@ textarea.form-input::-webkit-resizer {
     }
 
 
-/**
+
+    /**
    * #CONTACT
    */
 
-.mapbox {
-    height: 380px;
-    border-radius: 18px;
-}
+    .mapbox {
+        height: 380px;
+        border-radius: 18px;
+    }
 
-.input-wrapper {
-    gap: 30px;
-    margin-bottom: 30px;
-}
+    .input-wrapper {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
 
-.form-input {
-    padding: 15px 20px;
-}
+    .form-input {
+        padding: 15px 20px;
+    }
 
-textarea.form-input {
-    margin-bottom: 30px;
-}
+    textarea.form-input {
+        margin-bottom: 30px;
+    }
 
-.form-btn {
-    --fs-6: 16px;
-    padding: 16px 20px;
-}
+    .form-btn {
+        --fs-6: 16px;
+        padding: 16px 20px;
+    }
 
-.form-btn ion-icon {
-    font-size: 18px;
-}
+    .form-btn ion-icon {
+        font-size: 18px;
+    }
 
 }
 
@@ -380,9 +380,13 @@ textarea.form-input {
    * REUSED STYLE
    */
 
-/**
+    /**
    * CONTACT
    */
+
+    .contact active {
+        max-width: 80%contact;
+    }
 
     .input-wrapper {
         grid-template-columns: 1fr 1fr;
@@ -429,4 +433,9 @@ textarea.form-input {
         height: 60px;
     }
 
+    .contact{
+            padding-left: 140px;
+                padding-right: 140px;
     }
+
+}
