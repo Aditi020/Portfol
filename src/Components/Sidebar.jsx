@@ -49,7 +49,7 @@ function ContactItem({ icon, title, value }) {
 
 function Sidebar() {
     const contacts = [
-        { icon: 'mail-outline', title: 'Email', value: 'AK24er@gmail.com' },
+        { icon: 'mail-outline', title: 'Email', value: 'AK.24er@gmail.com' },
         { icon: 'phone-portrait-outline', title: 'Phone', value: '+91 9910158592' },
         { icon: 'calendar-outline', title: 'Birthday', value: 'Febr 24, 2002' },
         { icon: 'location-outline', title: 'Location', value: 'Ghaziabad, Uttar Pradesh, India' },
@@ -85,10 +85,10 @@ function Sidebar() {
         <aside className={`sidebar ${isSmallScreen ? 'small-screen' : ''}`} >
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <img src={Myavatar} alt="Richard hanrick" width="80" />
+                    <img src={Myavatar} alt="Aditi Kumar" width="100" />
                 </figure>
                 <div className="info-content">
-                    <h1 className="name" title="Richard hanrick">Aditi Kumar</h1>
+                    <h1 className="name" title="Aditi Kumar">Aditi Kumar</h1>
                     <p className="title">Full-Stack Developer</p>
                 </div>
                 {isSmallScreen && (

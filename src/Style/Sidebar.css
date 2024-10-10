@@ -377,8 +377,16 @@ article {
              max-width: 90%;
              /* margin-left: -50px; */
          }
-        
+                .avatar-box img {
+                    /* width: 80px; */
+                    width: 80px;
+                    /* Set the width of the image */
+                    margin-left: -10px;
+                    /* Adjust the left margin */
+                    margin-top: 2px;
+                }
 }
+
 
 @media(max-width: 767px) {
 .info_more-btn {
@@ -390,15 +398,33 @@ article {
     }
         .sidebar-info {
             max-height: max-content;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             /* margin-left: 10px; */
             /* padding-right: -40px; */
         }
          .sidebar{
-            max-width: 90%;
-            /* margin-left: -50px; */
+            max-width: 100%;
+            /* margin-left: -50px; */  
+         }
+         .sidebar .avatar-box{
+            /* margin-top: 20px; */
+            margin-right: 10px;
+            width: 100px;
+                /* Set the width */
+                height: 100px;
          }
 
+                                  .avatar-box img {
+                                      /* width: 80px; */
+                                      width: 105px !important;
+                                      /* Set the width of the image */
+                                      margin-left: -4px !important;
+                                      /* Adjust the left margin */
+                                      margin-top: 2px !important;
+                                  }
+         .sidebar .info-content {
+        margin-top: -20px;     
+        }
 }
 
 /**
@@ -432,9 +458,26 @@ article {
         left: -90px;
     }
      */
+     .sidebar .name{
+        margin-top: 40px;
+     }
+          .avatar-box {
+              background: var(--bg-gradient-onyx);
+            margin-top: 20px !important;
+            margin-bottom: 10px !important;
+            border-radius: 20px;
+          }
+    
+         
+         .sidebar .avatar-box img {
+             width: 102px !important;
+             /* Set the width of the image */
+             margin-left: -5px;
+             /* Adjust the left margin */
+             margin-top: -2px !important;
+             
+         }
 }
-
-
 
 
 /**
@@ -499,7 +542,12 @@ article {
         margin-bottom: 0;
         padding-top: 30px !important;
         z-index: 1;
+
     }
+/* 
+    .sidebar .info-content{
+        padding-left: 10px !important;
+    } */
 
     /* 
     .sidebar.active{

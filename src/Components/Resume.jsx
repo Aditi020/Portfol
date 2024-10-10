@@ -3,29 +3,64 @@ import '../Style/Resume.css';
 import { IoBookOutline } from 'react-icons/io5';
 
 const educationData = [
-    { title: 'University school of the arts', date: '2007 — 2008', description: 'Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.' },
-    { title: 'New york academy of art', date: '2006 — 2007', description: 'Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..' },
-    { title: 'High school of art and design', date: '2002 — 2004', description: 'Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.' }
+    { title: 'Bachelor of Technology in Computer Science ', date: '2020 — 2024', description: 'Academy of Business and Engineering Sciences ', percent:"7.73 CGPA" },
+    { title: 'ISC', date: '2006 — 2007', description: 'Fatima Convent Senior Secondary School', percent: "72.6 %" },
+    { title: 'ICSE', date: '2002 — 2004', description: 'Fatima Convent Senior Secondary School', percent: "80 %" }
 ];
 
 const experienceData = [
-    { title: 'Creative director', date: '2015 — Present', description: 'Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.' },
-    { title: 'Art director', date: '2013 — 2015', description: 'Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.' },
-    { title: 'Web designer', date: '2010 — 2013', description: 'Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.' }
+    {
+        title: 'Full-Stack Development',
+        description: [
+            'Experienced in building full-stack applications using ',
+            <u key="react" style={{color:"#ece4db"}} >React.js</u>, ', ',
+            <u key="node" style={{color:"#ece4db"}} >Node.js</u>, ', ',
+            <u key="express" style={{color:"#ece4db"}} >Express.js</u>, ', and ',
+            <u key="mongodb" style={{color:"#ece4db"}} >MongoDB</u>, ', focusing on creating responsive, dynamic interfaces and robust backend services.'
+        ]
+    },
+    {
+        title: 'Backend Development',
+        description: [
+            'Developed backend services using ',
+            <u key="springboot" style={{color:"#ece4db"}} >Spring Boot</u>, ', managing APIs, data storage, and handling backend logic to support frontend applications.'
+        ]
+    },
+    {
+        title: 'Authentication & Security',
+        description: [
+            'Implemented secure user authentication and authorization systems using ',
+            <u key="jwt" style={{color:"#ece4db"}} >JSON Web Tokens (JWT)</u>, ' and ',
+            <u key="bcrypt" style={{color:"#ece4db"}} >bcrypt</u>, ', ensuring strong data security practices.'
+        ]
+    },
+    {
+        title: 'Version Control',
+        description: [
+            'Proficient in using ',
+            <u key="git" style={{color:"#ece4db"}} >Git</u>, ' and ',
+            <u key="github" style={{color:"#ece4db"}} >GitHub</u>, ' for version control and team collaboration, contributing to open-source projects and managing repositories efficiently.'
+        ]
+    }
 ];
+
 
 const skillsData = [
-    { title: 'Web design', level: '80%' },
-    { title: 'Graphic design', level: '70%' },
-    { title: 'Branding', level: '90%' },
-    { title: 'WordPress', level: '50%' }
+    { title: 'Frontend Development:', level: '80%' },
+    { title: 'Backend Development', level: '70%' },
+    { title: 'Database Management', level: '60%' },
+    { title: 'Version Control ', level: '75%' },
+    { title: 'Responsive Design & UI/UX ', level: '75%' }
+
 ];
 
-const TimelineItem = ({ title, date, description }) => (
+const TimelineItem = ({ title, date, description , percent}) => (
     <li className="timeline-item">
         <h4 className="h4 timeline-item-title">{title}</h4>
         <span>{date}</span>
-        <p className="timeline-text">{description}</p>
+        <p className="timeline-text" style={{fontWeight:"Bold"}}>{description}</p>
+        <p className="timeline-text" style={{ color: "#d9a260" }}>{percent}</p>
+
     </li>
 );
 
