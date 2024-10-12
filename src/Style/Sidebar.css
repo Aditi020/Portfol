@@ -342,6 +342,13 @@ article {
         padding: 10px 15px;
         display: block;
     }
+
+ .sidebar-container{
+        width: 140%;
+        margin-left: -60px;
+    }
+
+    
 }
 
 /**

@@ -80,9 +80,9 @@
     }
 
     
- .page-content{
+ /* .page-content{
     margin: 0 -30px 0  -30px ;
- }
+ } */
 
     .navbar {
         position: fixed;
@@ -149,15 +149,16 @@
     .layout {
         flex-direction: column;
         /* Stack layout vertically */
-        margin: 0 -60px ;
+        /* margin: 0 60px 0 -60px ; */
     }
 
     .sidebar {
         width: 100%;
         /* Sidebar takes full width */
-        margin-bottom: 20px;
+        /* margin-bottom: 20px;
         margin-top: 10px;
         /* Space below the sidebar */
+        /* padding: 0, -60px !important; */ 
     }
 
     .navbar {
@@ -180,6 +181,8 @@
     .page-content {
         margin-top: 5px !important;
         /* Space above content */
+        width: 140%;
+        margin-left: -60px;
     }
     .page-content .navbar{
         margin-top: -20px !important;
