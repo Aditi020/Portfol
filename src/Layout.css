@@ -75,6 +75,7 @@
         width: 100% !important;
         /* Sidebar takes full width */
         margin-bottom: 20px;
+        margin-left: 30px !important;
         /* margin-left: -10px !important; */
 
         /* Space below the sidebar */
