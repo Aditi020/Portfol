@@ -337,7 +337,7 @@ article {
 
 @media (max-width: 580px) {
     .info_more-btn {
-        top: -60px;
+        margin-top: 10px;
         /* right: -60px; */
         padding: 10px 15px;
         display: block;
@@ -345,7 +345,7 @@ article {
 
  .sidebar-container{
         width: 150%;
-        margin-left: -80px;
+        margin-left: -65px;
     }
 
 
