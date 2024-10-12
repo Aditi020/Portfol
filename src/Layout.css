@@ -62,7 +62,7 @@
 
 
 /* Responsive styles for screens between 580px and 1250px */
-@media (max-width: 1250px) and (min-width: 480px) {
+@media (max-width: 1250px) and (min-width: 580px) {
     .layout {
         flex-direction: column;
         /* Stack layout vertically */

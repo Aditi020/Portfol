@@ -63,7 +63,8 @@
 @media (max-width: 580px) {
     .navbar{
     padding-right:2[x] !important;
-    }
+        width: 100% !important;
+}
 .navbar-list {
         display: flex;
         flex-wrap: wrap;
