@@ -2,7 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import Myavatar from "../assets/avatar1.png";
 import '../Style/Sidebar.css';
-import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoChevronDown } from 'react-icons/io5';
+import { IoMailOutline, IoPhonePortraitOutline, IoCalendarOutline, IoLocationOutline, IoChevronDown } from 'react-icons/io5';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHashnode, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import iconGfg from '../assets/gfg.svg';
 
 
 function SocialItem({ IconComponent }) {
@@ -82,40 +85,53 @@ function Sidebar() {
 
     return (
         <sidebar className="sidebar-container" >
-        <aside className={`sidebar ${isSmallScreen ? 'small-screen' : ''}`} >
-            <div className="sidebar-info">
-                <figure className="avatar-box">
-                    <img src={Myavatar} alt="Aditi Kumar" width="100" />
-                </figure>
-                <div className="info-content">
-                    <h1 className="name" title="Aditi Kumar">Aditi Kumar</h1>
-                    <p className="title">Full-Stack Developer</p>
+            <aside className={`sidebar ${isSmallScreen ? 'small-screen' : ''}`} >
+                <div className="sidebar-info">
+                    <figure className="avatar-box">
+                        <img src={Myavatar} alt="Aditi Kumar" width="100" />
+                    </figure>
+                    <div className="info-content">
+                        <h1 className="name" title="Aditi Kumar">Aditi Kumar</h1>
+                        <p className="title">Full-Stack Developer</p>
+                    </div>
+                    {isSmallScreen && (
+                        <button className="info_more-btn" onClick={handleDropdownClick}>
+                            <span>Show Contacts</span>
+                            <IoChevronDown />
+                        </button>
+                    )}
                 </div>
-                {isSmallScreen && (
-                    <button className="info_more-btn" onClick={handleDropdownClick}>
-                        <span>Show Contacts</span>
-                        <IoChevronDown />
-                    </button>
-                )}
-            </div>
 
-            {(!isSmallScreen || showDropdown) && (
-                <div className="sidebar-info_more">
-                    <div className="separator"></div>
-                    <ul className="contacts-list">
-                        {contacts.map(({ icon, title, value }) => (
-                            <ContactItem key={title} icon={icon} title={title} value={value} />
-                        ))}
-                    </ul>
-                    <div className="separator"></div>
-                    <ul className="social-list" style={{ listStyle: 'none' }}>
-                        <SocialItem IconComponent={IoLogoFacebook} />
-                        <SocialItem IconComponent={IoLogoTwitter} />
-                        <SocialItem IconComponent={IoLogoInstagram} />
-                    </ul>
-                </div>
-            )}
-        </aside>
+                {(!isSmallScreen || showDropdown) && (
+                    <div className="sidebar-info_more">
+                        <div className="separator"></div>
+                        <ul className="contacts-list">
+                            {contacts.map(({ icon, title, value }) => (
+                                <ContactItem key={title} icon={icon} title={title} value={value} />
+                            ))}
+                        </ul>
+                        <div className="separator"></div>
+                        <ul className="social-list" style={{ listStyle: 'none' }}>
+                            <li className="social-item">
+                                <a href="https://aditi24.hashnode.dev/" className="social-link">
+                                <FontAwesomeIcon icon={faHashnode} /></a>
+                            </li>
+                            <li className="social-item">
+                                <a href="https://shorturl.at/lVPAm" className="social-link">
+                                    <img src={iconGfg} alt="GeeksforGeeks" style={{ width: '24px', height: '24px' }}/></a>
+                            </li>
+                            <li className="social-item">
+                                <a href="#" className="social-link">
+                                    <FontAwesomeIcon icon={faTwitter} /></a>
+                            </li>
+                            <li className="social-item">
+                            <a href="#" className="social-link">
+                            <FontAwesomeIcon icon={faLinkedin} size="1x" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                )}
+            </aside>
         </sidebar>
     );
 }

@@ -1,15 +1,18 @@
 import React from 'react';
 import '../Style/About.css';
 
-import iconDesign from '../assets/icon-design.svg';
+import iconBlog from '../assets/icon-design.svg';
 import iconDev from '../assets/icon-dev.svg';
-import iconApp from '../assets/icon-app.svg';
-import iconPhoto from '../assets/icon-photo.svg';
+import iconDesign from '../assets/Design.png';
+// import iconApp from '../assets/icon-app.svg';
+// import iconPhoto from '../assets/icon-photo.svg';
+import iconLearn from '../assets/Devlearn.png';
 import avatar1 from '../assets/avatar-1.png';
 import avatar2 from '../assets/avatar-2.png';
 import avatar3 from '../assets/avatar-3.png';
 import avatar4 from '../assets/avatar-4.png';
-import quoteIcon from '../assets/icon-quote.svg';
+// import quoteIcon from '../assets/icon-quote.svg';
+import ReactGithubCalendar from 'react-github-calendar';
 
 function About() {
     const testimonialsData = [
@@ -20,10 +23,10 @@ function About() {
     ];
 
     const servicesData = [
-        { icon: iconDesign, title: 'Web design', text: 'The most modern and high-quality design made at a professional level.' },
-        { icon: iconDev, title: 'Web development', text: 'High-quality development of sites at the professional level.' },
-        { icon: iconApp, title: 'Mobile apps', text: 'Professional development of applications for iOS and Android.' },
-        { icon: iconPhoto, title: 'Photography', text: 'I make high-quality photos of any category at a professional level.' }
+        { icon: iconDesign, title: 'Software Design', text: 'Creating scalable and robust software solutions seamlessly.' },
+        { icon: iconDev, title: 'Web development', text: 'Building modern and responsive web applications efficiently.' },
+        { icon: iconLearn, title: 'Learning & Experimentation', text: 'Exploring new tools and technologies to stay updated.' },
+        { icon: iconBlog, title: 'Blogging', text: 'Sharing knowledge and experiences about tech and development.' }
     ];
 
     const Testimonial = ({ name, avatar, text }) => (
@@ -52,6 +55,26 @@ function About() {
         </li>
     );
 
+    const calendarTheme = {
+        light: [
+            'hsla(45, 100%, 72%, 0.05)',  // level0 (light shade)
+            'hsla(45, 100%, 72%, 0.2)',   // level1
+            'hsla(45, 100%, 72%, 0.4)',   // level2
+            'hsla(45, 100%, 72%, 0.6)',   // level3
+            'hsla(45, 100%, 72%, 0.8)',   // level4
+        ],
+        dark: [
+            'hsla(45, 100%, 72%, 0.05)',  // level0 (light shade)
+            'hsla(45, 100%, 72%, 0.2)',   // level1
+            'hsla(45, 100%, 72%, 0.4)',   // level2
+            'hsla(45, 100%, 72%, 0.6)',   // level3
+            'hsla(45, 100%, 72%, 0.8)',   // level4
+        ]
+    };
+
+    // Replace `yourGitHubUsername` with your actual GitHub username
+    const githubUsername = 'Aditi020';
+
     return (
         <article className="about active" data-page="about">
             <header>
@@ -59,11 +82,14 @@ function About() {
             </header>
             <section className="about-text">
                 <p>
-                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-                    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                    👋 I'm Full Stack Developer hailing from the Indian state of Uttar Pradesh. working in Web Development and Backend technologies.
+                    My interest in technology has been fuelled by curiosity and a love for solving complex problems.
                 </p>
                 <p>
-                    My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add a personal touch to your product and make sure that it is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I have created web designs for many famous brand companies.
+                    I specialize in developing smooth and accessible web experiences, focusing on creating modern UIs with React, powerful backends with Node.js and Spring Boot, and efficient data management with MongoDB. My objective is to deliver seamless and user-friendly solutions that are also effective and reliable.
+                </p>
+                <p>
+                    When I’m not coding, you’ll find me exploring new tech tools, diving into cloud computing, or brainstorming the next project idea. I believe in continuous learning and love collaborating with like-minded individuals to bring innovative ideas to life.
                 </p>
             </section>
             <section className="service">
@@ -74,6 +100,19 @@ function About() {
                     ))}
                 </ul>
             </section>
+
+            <section className="github-calendar">
+                <h3 className="h3">GitHub Contributions</h3>
+                <ReactGithubCalendar
+                    username={githubUsername}
+                    theme={calendarTheme}
+                    blockSize={15}
+                    // blockMargin={5}
+                    fontSize={14}
+                    fontColor="hsl(0, 0%, 100%)" 
+                />
+            </section>
+
             {/* <section className="testimonials">
                 <h3 className="h3 testimonials-title">Testimonials</h3>
                 <ul className="testimonials-list has-scrollbar">

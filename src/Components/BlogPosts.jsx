@@ -1,64 +1,76 @@
-import blogImage1 from '../assets/blog-1.jpg';
-import blogImage2 from '../assets/blog-2.jpg';
-import blogImage3 from '../assets/blog-3.jpg';
-import blogImage4 from '../assets/blog-4.jpg';
-import blogImage5 from '../assets/blog-5.jpg';
-import blogImage6 from '../assets/blog-6.jpg';
+import blogImage1 from '../assets/1.avif';
+import blogImage2 from '../assets/2.avif';
+import blogImage3 from '../assets/3.avif';
+import blogImage4 from '../assets/4.avif';
+import blogImage5 from '../assets/5.avif';
+import blogImage6 from '../assets/6.jpg';
+import blogImage7 from '../assets/7.jpg';
+import blogImage8 from '../assets/8.jpg';
 
 const Blogposts = [
     {
-        id: 1,
-        title: "Design conferences in 2022",
-        category: "Design",
-        date: "2022-02-23",
-        description: "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
-        image: blogImage1,
-        link: "https://example.com/design-conferences-2022"
+        id: 7,
+        title: "Operation Name in GraphQL",
+        date: "04-Apr-2024",
+        description: "In GraphQL, the operation name is a label that we attach",
+        image: blogImage7,
+        link: "https://www.geeksforgeeks.org/operation-name-in-graphql/?itm_source=auth&itm_medium=contributions&itm_campaign=articles"
     },
     {
         id: 2,
-        title: "Best fonts every designer",
-        category: "Design",
-        date: "2022-02-23",
-        description: "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.",
-        image: blogImage2,
-        link: "https://example.com/best-fonts-designers"
-    },
-    {
-        id: 3,
-        title: "Design digest #80",
-        category: "Design",
-        date: "2022-02-23",
-        description: "Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.",
-        image: blogImage3,
-        link: "https://example.com/design-digest-80"
+        title: "Understanding Git and GitHub",
+        date: "27-Nov-2023",
+        description: "If you have worked with codes then you must have come across",
+        image: blogImage1,
+        link: "https://aditi24.hashnode.dev/understanding-git-and-github"
     },
     {
         id: 4,
-        title: "UI interactions of the week",
-        category: "Design",
-        date: "2022-02-23",
-        description: "Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.",
-        image: blogImage4,
-        link: "https://example.com/ui-interactions-week"
+        title: "Core Concept You Need to Know About React",
+        date: "26-Jan-2024",
+        description: "React.js is an open-source JavaScript library, crafted",
+        image: blogImage2,
+        link: "https://aditi24.hashnode.dev/core-concept-you-need-to-know-about-react"
     },
     {
-        id: 5,
-        title: "The forgotten art of spacing",
-        category: "Design",
-        date: "2022-02-23",
-        description: "Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: blogImage5,
-        link: "https://example.com/art-of-spacing"
+        id: 1,
+        title: "How To Install and Use Docker on Ubuntu 23.10",
+        date: "24-Nov-2023",
+        description: "Docker is an application that simplifies the process of managing",
+        image: blogImage4,
+        link: "https://aditi24.hashnode.dev/how-to-install-and-use-docker-on-ubuntu-2310"
+    },
+    {
+        id: 3,
+        title: "Web Development – HTML, CSS, and JavaScript",
+        date: "27-Nov-2023",
+        description: "Browsers have become an integral part of our daily routine",
+        image: blogImage3,
+        link: "https://aditi24.hashnode.dev/web-development-html-css-and-javascript-explained-for-beginners"
     },
     {
         id: 6,
-        title: "Design digest #79",
-        category: "Design",
-        date: "2022-02-23",
-        description: "Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.",
+        title: "Demystifying Pagination in GraphQL",
+        date: "26-Mar-2024",
+        description: "GraphQL has developed into an effective API language",
+        image: blogImage8,
+        link: "https://www.geeksforgeeks.org/pagination-in-graphql/?itm_source=auth&itm_medium=contributions&itm_campaign=articles"
+    },
+    {
+        id: 5,
+        title: "How to host Windows container on Linux",
+        date: "06-Jul-2024",
+        description: "Containers have become the most popular solution",
+        image: blogImage5,
+        link: "https://aditi24.hashnode.dev/how-to-host-windows-container-on-linux"
+    },
+    {
+        id: 8,
+        title: "Asynchronous JavaScript Demystified",
+        date: "10-Jan-2025",
+        description: "At its core, asynchronous JavaScript enables code to execute tasks",
         image: blogImage6,
-        link: "https://example.com/design-digest-79"
+        link: "https://aditi24.hashnode.dev/understanding-git-and-github"
     }
 ];
 

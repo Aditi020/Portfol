@@ -288,8 +288,9 @@
 
 .project-title,
 .project-category {
-    margin-left: 50px;
+    margin-left: 10px;
     margin-bottom: -5px;
+
 }
 
 .project-title {
@@ -297,7 +298,10 @@
     font-size: var(--fs-4);
     font-weight: var(--fw-600);
     line-height: 1.3;
-    margin-left: 25%;
+    margin-bottom: 3px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin-left: 30%; */
     /* text-decoration: none !important; */
 
 }
@@ -306,7 +310,8 @@
     color: var(--light-gray-70);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
-    margin-left: 22%;
+    margin-bottom: 7px;
+    /* margin-left: 50%; */
     /* text-decoration: none !important; */
 }
 
