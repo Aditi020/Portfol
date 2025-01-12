@@ -104,6 +104,7 @@ function About() {
             <section className="github-calendar">
                 <h3 className="h3">GitHub Contributions</h3>
                 <ReactGithubCalendar
+                    className="calendar-container"
                     username={githubUsername}
                     theme={calendarTheme}
                     blockSize={15}
