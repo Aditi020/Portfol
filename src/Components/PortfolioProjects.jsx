@@ -15,8 +15,8 @@ function PortfolioProjects() {
       title: "RapidBite",
       category: "Web development",
       imgSrc: project1,
-      link: "https://example.com/finance",
-      github: "https://github.com/username/rapidbite", // GitHub link
+      link: "https://rapid-bite.vercel.app",
+      github: "https://github.com/Aditi020/RapidBite", 
     },
     {
       id: 2,
@@ -39,20 +39,20 @@ function PortfolioProjects() {
       title: "Portfolio",
       category: "Applications",
       imgSrc: project4,
-      link: "https://example.com/brawlhalla",
-      github: "https://github.com/username/portfolio", // GitHub link
+      link: "https://my-portfolio-xi-two-61.vercel.app/",
+      github: "https://github.com/Aditi020/My-Portfolio/tree/main", 
     },
     {
       id: 5,
       title: "Zerodha.",
       category: "Web design",
       imgSrc: project5,
-      link: "https://example.com/dsm",
-      github: "https://github.com/username/zerodha", // GitHub link
+      link: "https://ak-zerodha.vercel.app/",
+      github: "https://github.com/Aditi020/Zerodha", 
     },
     {
       id: 6,
-      title: "TaskNet",
+      title: "Zomato",
       category: "Web design",
       imgSrc: project6,
       link: "https://example.com/metaspark",
@@ -64,23 +64,23 @@ function PortfolioProjects() {
       category: "Web development",
       imgSrc: project7,
       link: "https://example.com/summary",
-      github: "https://github.com/username/tasknet", // GitHub link
+      github: "https://github.com/username/tasknet", 
     },
     {
       id: 8,
       title: "Wanderlust",
       category: "Applications",
       imgSrc: project8,
-      link: "https://example.com/taskmanager",
-      github: "#", // Placeholder GitHub link
+      link: "https://wanderlust-opal.vercel.app/",
+      github: "https://github.com/Aditi020/Wanderlust", // Placeholder GitHub link
     },
     {
       id: 9,
       title: "Blog Website",
       category: "Web development",
       imgSrc: project9,
-      link: "https://example.com/arrival",
-      github: "https://github.com/username/blog-website", // GitHub link
+      link: "https://dev-quill.vercel.app/",
+      github: "https://github.com/Aditi020/DevQuill", 
     },
   ];
 }
