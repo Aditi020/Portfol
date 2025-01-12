@@ -245,6 +245,13 @@ article.active {
     font-weight: var(--fw-3);
     line-height: 1.6;
 }
+/*
+ * #github-calender */
+
+.github-calendar {
+    color: hsl(0, 0%, 100%);
+}
+
 
 /**
  * #testimonials 
