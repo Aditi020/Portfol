@@ -183,8 +183,8 @@
     .page-content {
         margin-top: 5px !important;
         /* Space above content */
-        width: 160%;
-        margin-left: -75px;
+        /* width: 100%; */
+        margin-left: -22%;
     }
     .page-content .navbar{
         margin-top: -20px !important;

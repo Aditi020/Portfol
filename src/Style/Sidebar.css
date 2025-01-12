@@ -435,6 +435,21 @@ article {
         }
 }
 
+@media (min-height: 580px) {
+    .sidebar {
+        width: 90% !important;
+        margin-left:0 !important;
+    }
+}
+
+@media (min-height: 760px) {
+    .sidebar {
+        width: 90% !important;
+        margin-left: 0% !important;
+    }
+}
+
+
 /**
 * responsive larger than 1250px screen
 */

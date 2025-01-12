@@ -543,9 +543,24 @@ article.active {
 }
 
 
+     @media (min-height: 580px )  {
+        .about{
+            width: 110%;
+            /* margin-left: 5%; */
+        }
+     }
+
+
+/* @media (max-height: 580px) {
+    .about {
+            width: 110%;
+            margin-left: 15%;
+        }
+    } */
 /**
      * responsive larger than 768px screen
      */
+
 
 @media (min-width: 768px) {
 
